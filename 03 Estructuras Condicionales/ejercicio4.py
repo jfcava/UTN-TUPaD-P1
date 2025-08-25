@@ -12,9 +12,9 @@ edad = int(input("Por favor, ingresá tu edad: "))
 
 if edad < 12:
     print("Perteneces a la categoría: Niño/a")
-elif edad >= 12 and edad < 18:
+elif edad < 18:
     print("Perteneces a la categoría: Adolescente")
-elif edad >= 18 and edad < 30:
+elif edad < 30:
     print("Perteneces a la categoría: Adulto/a joven")
 else:
     print("Perteneces a la categoría: Adulto/a")
