@@ -3,17 +3,23 @@
 
 import random
 
+# Genero numero aleatorio entre 0 y 9
 aleatorio = random.randint(0,9)
-intentos = 0
+cant_intentos = 0
 
+print("==========================")
 print("=== ADIVINÁ EL NÚMERO! ===")
+print("==========================")
 
+# Pido un numero y sumo 1 intento
 num = int(input("Probá con un número: "))
-intentos += 1
+cant_intentos += 1
 
+# Mientras el numero ingresado no sea igual, vuelvo a pedir otro numero,
+# sumo un intento, sino imprimo mensaje de Ganador
 while num != aleatorio:
     print("No adivinaste :( \nVolvé a intentarlo!")
-    intentos += 1
+    cant_intentos += 1
     num = int(input("Probá con otro número: "))
 else:
-    print(f"Ganaste! Acertaste el número en {intentos} intentos.")
+    print(f"Ganaste! Acertaste el número en {cant_intentos} intentos.")
