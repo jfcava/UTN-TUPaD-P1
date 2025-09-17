@@ -19,3 +19,18 @@ else:
 
 print("Programa terminado.")
 
+
+# OTRA SOLUCION USANDO IN
+
+# Pedimos al usuario que ingrese una frase o palabra
+frase = input("Por favor, ingrese una frase o palabra: ")
+
+# Para acceder a la última letra de un string podemos usar el índice -1
+# Si la última letra de la frase (frase[-1]) es una vocal, agregar un signo
+# de exclamación e imprimirla
+if frase[-1] in ("AEIOUaeiou"):
+  print(f"{frase}!")
+# Sino, imprimir la frase tal cual fue ingresada
+else:
+  print(frase)
+
