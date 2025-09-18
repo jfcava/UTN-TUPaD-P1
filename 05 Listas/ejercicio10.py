@@ -3,6 +3,7 @@
 # • Mostrar el día con mayores ventas totales.
 # • Indicar cuál fue el producto más vendido en la semana.
 
+# Inicializo lista y variables
 ventas = [
     [5, 7, 3, 4, 6, 8, 2],   # Producto 1
     [2, 4, 6, 3, 5, 7, 9],   # Producto 2
@@ -15,9 +16,11 @@ mayores_ventas_semana = 0
 print("=== TOTAL VENTAS ===")
 for prod in range(len(ventas)):
     total_vendido_producto = 0
+    # Calculo el total vendido por cada producto
     for dia in range(len(ventas[prod])):
         total_vendido_producto += ventas[prod][dia]
     print(f"Producto {prod+1}: {total_vendido_producto}")
+    # Comparo para encontrar el producto mas vendido de la semana
     if total_vendido_producto > mayores_ventas_semana:
         mayores_ventas_semana = total_vendido_producto
         indice_mas_vendido = prod
@@ -25,6 +28,7 @@ for prod in range(len(ventas)):
 print(f"Producto mas vendido de la semana: {indice_mas_vendido + 1}")
 
 mayores_ventas = 0
+# Recorro la lista para encontrar el día con mayores ventas totales.
 for dia in range(7):
     total_vendido_dia= 0
     for prod in range(len(ventas)):
@@ -33,6 +37,7 @@ for dia in range(7):
         mayores_ventas = total_vendido_dia
         indice_mejor_dia = dia
 
+# Segun el indice obtenido, imprimo el dia con mayores ventas
 mejor_dia = "Mejor día de ventas: "
 if indice_mejor_dia == 0:
     print(mejor_dia + "Lunes")

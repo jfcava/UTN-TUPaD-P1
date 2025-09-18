@@ -2,6 +2,7 @@
 # • Mostrar el promedio de cada estudiante.
 # • Mostrar el promedio de cada materia.
 
+# Inicializo variables
 notas = [
     [7, 8, 6],  # Estudiante 1
     [5, 9, 7],  # Estudiante 2
@@ -16,10 +17,12 @@ sum_materia3 = 0
 
 print("=== PROMEDIOS ESTUDIANTES ===")
 
+# Recorro matriz
 for x in range(len(notas)):
     suma = 0
     for y in range(len(notas[x])):
-        suma += (notas[x][y])
+        suma += (notas[x][y]) # Sumo las notas de cada estudiante (variable x)
+        # Sumo las notas de cada materia
         if y == 0:
             sum_materia1 += notas[x][y]
         elif y == 1:
@@ -27,8 +30,9 @@ for x in range(len(notas)):
         else:
             sum_materia3 += notas[x][y]
 
-    print(f"Promedio Estudiante {x + 1}: {round(suma/3,2)}")
+    print(f"Promedio Estudiante {x + 1}: {round(suma/3,2)}") # Imprimo promedio de cada estudiante
 
+# Calculo e imprimo promedio de cada materia
 print("\n=== PROMEDIO MATERIAS ===")
 print(f"Promedio materia 1: {round(sum_materia1/len(notas), 2)}")
 print(f"Promedio materia 2: {round(sum_materia2/len(notas), 2)}")
