@@ -3,7 +3,7 @@
 # Solicitar al usuario los segundos y mostrar el resultado usando esta función.
 
 def segundos_a_horas(segundos):
-    return round((segundos / 60),2)
+    return round((segundos / 3600),2)
 
 print("=== CALCULO DE HORAS ===")
 seg = input("Cantidad de segundos: ")
