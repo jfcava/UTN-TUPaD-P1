@@ -19,5 +19,6 @@ while not radio.isdigit():
     print("Solo se aceptan números positivos.")
     radio = input("Radio: ")
 
+print()
 print(f"Área del círculo: {round(calcular_area_circulo(float(radio)), 2)}")
 print(f"Perímetro del círculo: {round(calcular_perimetro_circulo(float(radio)), 2)}")
