@@ -7,8 +7,13 @@
 parcial1 = {"Ana", "Lucas", "María", "Sofía", "Tomás"}
 parcial2 = {"Bruno", "Camila", "Diego", "Ana", "Valentina", "Lucas", "Mateo", "Tomás"}
 
+#Interseccion - Elementos que estan en ambos sets
 print("Aprobaron ambos parciales:", parcial1 & parcial2)
+
+#Diferencia Simetrica - Elementos que estan en un set pero no en ambos
 print("Aprobaron solo un parcial:", parcial1 ^ parcial2)
+
+#Union - Todos los elementos sin repetir
 print("Lista de estudiantes que aprobaron al menos un parcial:", parcial1 | parcial2)
 
 

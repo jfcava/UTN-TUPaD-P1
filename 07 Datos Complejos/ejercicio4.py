@@ -6,6 +6,7 @@ contactos = {}
 
 print("=== CARGAR TELÉFONOS ===")
 
+# Se carga el diccionario 'contactos' con datos
 for i in range(5):
     nombre = input(f"{i + 1}. Nombre: ")
     telefono = int(input("Teléfono: "))
@@ -13,11 +14,11 @@ for i in range(5):
     
     print("Contacto agregado.")
     print()
-    print("Agregaste los 5 contactos exitosamente.")
+print("Agregaste los 5 contactos exitosamente.")
 
 print("=== BUSCÁ UN CONTACTO ===")
 busqueda = input('Nombre a buscar: ')
-
+# Se realiza la busqueda del contacto y se imprime en pantalla
 if busqueda in contactos:
     print()
     print(f"Nombre: {busqueda}")

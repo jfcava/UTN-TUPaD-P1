@@ -6,9 +6,11 @@
 
 import os
 
+#Funcion para limpiar consola
 def limpiar():
     os.system("cls")
 
+#Funcion para mostrar menu
 def mostrar_menu():
     for opcion in menu:
         print(opcion)
@@ -19,6 +21,7 @@ menu = ["\n=== STOCK DE PRODUCTOS ===",
         "3. Agregar nuevo producto",
         "4. Salir"]
 
+#Stock inicial de productos
 stock_productos = {
     "Leche": 15,
     "Pan": 32,
@@ -68,7 +71,7 @@ match int(opcion):
         while not unidades.isdigit():
             print("Solo se aceptan números positivos. Volvé a intentarlo.")
             unidades = input("Ingrese la cantidad de unidades: ")
-        stock_productos[nuevo_producto] = unidades
+        stock_productos[nuevo_producto] = int(unidades)
         print("Producto agregado exitosamente.")
         print(stock_productos)
     case 4:
