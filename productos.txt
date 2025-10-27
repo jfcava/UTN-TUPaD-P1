@@ -1,3 +1,5 @@
 Pantalon,80000,25
 Campera,250000,10
-Remera,250000,80
+Remera,25000,80
+Camisa,50000.0,5
+Medias,5800.0,90
