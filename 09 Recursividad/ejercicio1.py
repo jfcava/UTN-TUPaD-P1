@@ -12,5 +12,8 @@ def factorial(n):
 print("=== FACTORIAL DE NÚMEROS ENTRE 1 Y UN NÚMERO ===")
 numero = int(input("Ingrese un número: "))
 
-for i in range(1, numero + 1):
-    print(f"Factorial de {i}: {factorial(i)}")
+if numero < 0:
+    print("Solo se aceptan numeros positivos.")
+else:
+    for i in range(1, numero + 1):
+        print(f"Factorial de {i}: {factorial(i)}")

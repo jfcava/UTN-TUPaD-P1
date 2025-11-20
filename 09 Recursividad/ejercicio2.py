@@ -10,5 +10,8 @@ def fibonacci(n):
 print("=== CALCULO DE SERIE DE FIBONACCI ===")
 posicion_final = int(input("Indique la posicion final: "))
 
-for i in range(posicion_final + 1):
-    print(f"Valor en posicion {i}: {fibonacci(i)}")
+if posicion_final < 0:
+    print("Debe ingresar un número entero positivo.")
+else:
+    for i in range(posicion_final + 1):
+        print(f"Valor en posicion {i}: {fibonacci(i)}")

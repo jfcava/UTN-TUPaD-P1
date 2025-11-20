@@ -12,6 +12,10 @@ def potencia(n, m):
 numero = int(input("Ingrese un numero: "))
 potencia_seleccionada = int(input("Ingrese la potencia: "))
 
-print(potencia(numero, potencia_seleccionada))
+if potencia_seleccionada < 0:
+    print("Solo se aceptan exponentes enteros no negativos.")
+else:
+    print(potencia(numero, potencia_seleccionada))
+
     
 
